@@ -1,11 +1,9 @@
 # RspecBeAnArrayOf
 
 [![Gem Version](https://badge.fury.io/rb/rspec_be_an_array_of.svg)](http://badge.fury.io/rb/rspec_be_an_array_of)
-[![Code Climate GPA](https://codeclimate.com/github//rspec_be_an_array_of.svg)](https://codeclimate.com/github//rspec_be_an_array_of)
-[![Code Climate Coverage](https://codeclimate.com/github//rspec_be_an_array_of/coverage.svg)](https://codeclimate.com/github//rspec_be_an_array_of)
-[![Gemnasium Status](https://gemnasium.com//rspec_be_an_array_of.svg)](https://gemnasium.com//rspec_be_an_array_of)
-[![Travis CI Status](https://secure.travis-ci.org//rspec_be_an_array_of.svg)](https://travis-ci.org//rspec_be_an_array_of)
-[![Patreon](https://img.shields.io/badge/patreon-donate-brightgreen.svg)](https://www.patreon.com/)
+[![Code Climate GPA](https://codeclimate.com/github/pekhee/rspec_be_an_array_of.svg)](https://codeclimate.com/github/pekhee/rspec_be_an_array_of)
+[![Gemnasium Status](https://gemnasium.com/pekhee/rspec_be_an_array_of.svg)](https://gemnasium.com/pekhee/rspec_be_an_array_of)
+[![Travis CI Status](https://secure.travis-ci.org/pekhee/rspec_be_an_array_of.svg)](https://travis-ci.org/pekhee/rspec_be_an_array_of)
 
 <!-- Tocer[start]: Auto-generated, don't remove. -->
 
@@ -29,19 +27,12 @@
 
 # Requirements
 
-0. [MRI 2.2.3](https://www.ruby-lang.org)
+0. [MRI 2.x](https://www.ruby-lang.org)
+1. [RSpec 3.x](http://rspec.info/)
 
 # Setup
 
-For a secure install, type the following (recommended):
-
-    gem cert --add <(curl -Ls https://www.my-website.com/gem-public.pem)
-    gem install rspec_be_an_array_of --trust-policy MediumSecurity
-
-NOTE: A HighSecurity trust policy would be best but MediumSecurity enables signed gem verification while
-allowing the installation of unsigned dependencies since they are beyond the scope of this gem.
-
-For an insecure install, type the following (not recommended):
+To install, type the following:
 
     gem install rspec_be_an_array_of
 
@@ -51,11 +42,9 @@ Add the following to your Gemfile:
 
 # Usage
 
-# Tests
-
-To test, run:
-
-    bundle exec rake
+    RSpec.describe ["an", "array", "of", "strings"] do
+      it { is_expected.to be_an_array_of String}
+    end
 
 # Versioning
 
@@ -76,7 +65,7 @@ Read [CONTRIBUTING](CONTRIBUTING.md) for details.
 
 # License
 
-Copyright (c) 2016 []().
+Copyright (c) 2016 [Pooyan Khosravi]().
 Read the [LICENSE](LICENSE.md) for details.
 
 # History
@@ -86,4 +75,4 @@ Built with [Gemsmith](https://github.com/bkuhlmann/gemsmith).
 
 # Credits
 
-Developed by [Pooyan Khosravi]() at []().
+Developed by [Pooyan Khosravi]().

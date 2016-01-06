@@ -1,4 +1,4 @@
-module RspecBeAnArrayOf
+module RSpecBeAnArrayOf
   # Gem identity information.
   module Identity
     def self.name
@@ -6,7 +6,7 @@ module RspecBeAnArrayOf
     end
 
     def self.label
-      "RspecBeAnArrayOf"
+      "RSpecBeAnArrayOf"
     end
 
     def self.version

@@ -2,8 +2,8 @@ $LOAD_PATH.push File.expand_path("../lib", __FILE__)
 require "rspec_be_an_array_of/identity"
 
 Gem::Specification.new do |spec|
-  spec.name = RspecBeAnArrayOf::Identity.name
-  spec.version = RspecBeAnArrayOf::Identity.version
+  spec.name = RSpecBeAnArrayOf::Identity.name
+  spec.version = RSpecBeAnArrayOf::Identity.version
   spec.platform = Gem::Platform::RUBY
   spec.authors = ["Pooyan Khosravi"]
   spec.email = ["pekhee@gmail.com"]
@@ -17,6 +17,8 @@ Gem::Specification.new do |spec|
     spec.cert_chain = [File.expand_path("~/.ssh/gem-public.pem")]
   end
 
+  spec.add_dependency "rspec"
+
   spec.add_development_dependency "rake"
   spec.add_development_dependency "gemsmith"
   spec.add_development_dependency "pry"
@@ -25,7 +27,6 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "pry-state"
   spec.add_development_dependency "pry-rescue"
   spec.add_development_dependency "pry-stack_explorer"
-  spec.add_development_dependency "rspec"
   spec.add_development_dependency "rb-fsevent" # Guard file events for OSX.
   spec.add_development_dependency "guard-rspec"
   spec.add_development_dependency "terminal-notifier"
