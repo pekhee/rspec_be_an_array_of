@@ -8,8 +8,9 @@ Gem::Specification.new do |spec|
   spec.authors = ["Pooyan Khosravi"]
   spec.email = ["pekhee@gmail.com"]
   spec.homepage = "https://github.com//rspec_be_an_array_of"
-  spec.summary = "TODO: Add gem summary here."
-  spec.description = "TODO: Add gem description here."
+  spec.summary = "rspec matcher be_an_array_of type"
+  spec.description =
+    "An RSpec matcher that ensures expected is an array and each element is of specified type."
   spec.license = "MIT"
 
   if ENV["RUBY_GEM_SECURITY"] == "enabled"
