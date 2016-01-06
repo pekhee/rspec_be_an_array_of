@@ -46,6 +46,10 @@ Add the following to your Gemfile:
       it { is_expected.to be_an_array_of String}
     end
 
+# Tests
+
+    rake spec
+
 # Versioning
 
 Read [Semantic Versioning](http://semver.org) for details. Briefly, it means:
