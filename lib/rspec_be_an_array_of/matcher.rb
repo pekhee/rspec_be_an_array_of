@@ -5,7 +5,7 @@ RSpec::Matchers.define :be_an_array_of do |type|
     return false unless actual.is_a? Array
     self.actual = actual
 
-    actual.map { |e| e.is_a? type}.reduce(&:&)
+    actual.map { |e| e.is_a? type }.reduce(&:&)
   end
 
   failure_message do

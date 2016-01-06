@@ -10,7 +10,7 @@ RSpec.describe "RSpecBeAnArrayOf" do
 
   context "an array" do
     context "has elements of wrong type" do
-      subject { ["array", "of", "string", "and", 12]}
+      subject { ["array", "of", "string", "and", 12] }
       it "rejects" do
         expect(subject).not_to be_an_array_of String
       end
@@ -25,7 +25,7 @@ RSpec.describe "RSpecBeAnArrayOf" do
       end
 
       context "string" do
-        subject { ["array", "of", "strings"] }
+        subject { %w(an array of strings) }
         it "accepts" do
           expect(subject).to be_an_array_of String
         end
